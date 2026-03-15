@@ -26,25 +26,39 @@ layout: default
     {%- for post in site.posts -%}
       <li>
         {%- assign date_format = site.plainwhite.date_format | default: "%b %-d, %Y" -%}
-        <a class="post-link" href="{{ post.url | relative_url }}">
-          <h2 class="post-title">{{ post.title | escape }}</h2>
-        </a>
-        <div class="post-meta">
-          <div class="post-date">
-            <i class="icon-calendar"></i>
-            {{ post.date | date: date_format }}
+        <div class="post-card">
+          <div class="post-card-main">
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              <h2 class="post-title">{{ post.title | escape }}</h2>
+            </a>
+            <div class="post-meta">
+              <div class="post-date">
+                <i class="icon-calendar"></i>
+                {{ post.date | date: date_format }}
+              </div>
+              {%- if post.categories.size > 0-%}
+              <ul class="post-categories">
+                {%- for tag in post.categories -%}
+                <li>{{ tag }}</li>
+                {%- endfor -%}
+              </ul>
+              {%- endif -%}
+            </div>
+            <div class="post">
+              {%- if site.show_excerpts -%}
+                {{ post.excerpt }}
+              {%- endif -%}
+            </div>
           </div>
-          {%- if post.categories.size > 0-%}
-          <ul class="post-categories">
-            {%- for tag in post.categories -%}
-            <li>{{ tag }}</li>
-            {%- endfor -%}
-          </ul>
+          {%- assign first_image = post.content | split: '<img ' | slice: 1, 1 | first -%}
+          {%- if first_image -%}
+            {%- assign src_part = first_image | split: 'src="' | slice: 1, 1 | first -%}
+            {%- assign thumb_src = src_part | split: '"' | first -%}
           {%- endif -%}
-        </div>
-        <div class="post">
-          {%- if site.show_excerpts -%}
-            {{ post.excerpt }}
+          {%- if thumb_src and thumb_src != '' -%}
+          <a class="post-thumb" href="{{ post.url | relative_url }}">
+            <img src="{{ thumb_src }}" alt="{{ post.title | escape }} thumbnail">
+          </a>
           {%- endif -%}
         </div>
       </li>
