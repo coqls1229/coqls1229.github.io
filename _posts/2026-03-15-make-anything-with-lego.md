@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Make Anything with LEGO: Building LEGO 3D Blueprints from 2D Images"
-date: 2026-03-15 09:30:00 +0900
+date: 2023-11-15 09:30:00 +0900
 categories: [project, generative-ai]
 ---
 

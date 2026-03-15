@@ -37,7 +37,9 @@ show_excerpts: true
 
 plainwhite:
   name: Chaebeen Bang
-  tagline: Video understanding and multimodal learning
+  tagline: |
+    Video Understanding
+    and 3D Vision
   date_format: "%b %-d, %Y"
   html_lang: "en"
   portfolio_image: "assets/profile.jpg"

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Stock price prediction using domestic stock data"
-date: 2026-03-15 09:00:00 +0900
+date: 2024-01-15 09:00:00 +0900
 categories: [project, ml]
 ---
 

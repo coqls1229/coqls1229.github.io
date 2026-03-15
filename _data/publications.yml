@@ -15,3 +15,15 @@
   project_url: "https://visualsciencelab-khu.github.io/RefineVAD-project/"
   code_url: "https://github.com/VisualScienceLab-KHU/RefineVAD"
   thumbnail: "/assets/img/publications/refinevad.png"
+
+- title: "Adaptive Temporal Shift Module for Weakly-Supervised Multimodal Video Anomly Detection"
+  authors: "ChaeBeen Bang*, Junhee Lee, MyoungChul Kim, MyeongAh Cho"
+  venue: "Korean Institute of Information Scientists and Engineers, Jul. 2025"
+  paper_url: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12318829"
+  thumbnail: "/assets/img/publications/atsm.png"
+
+- title: "Unifying Representation Learning and Unconditional Generation through Consistency Model"
+  authors: "Useok Choi*, ChaeBeen Bang, Kihyun Kim, MyeongAh Cho"
+  venue: "Korean Institute of Information Scientists and Engineers, Dec. 2024"
+  paper_url: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12042361&buildDate=2026-02-24+16%3A31%3A11&nowDate=20260310_1&cdnUrl=https%3A%2F%2Fcdn.dbpia.co.kr%2Fstatic&buildTime=20260224163111&minify=.min&appVersion=1.0.0&nodeId=NODE12042361&mobileYN=N&medaTypeCode=185005&isPDFSizeAllowed=true&locale=ko&foreignIpYn=N&articleTitle=Consistency+Model%EC%9D%84+%ED%86%B5%ED%95%9C+%ED%91%9C%ED%98%84%EC%9E%90+%ED%95%99%EC%8A%B5%EA%B3%BC+%EB%AC%B4%EC%A1%B0%EA%B1%B4%EC%A0%81+%EC%83%9D%EC%84%B1%EC%9D%98+%ED%86%B5%ED%95%A9&articleTitleEn=Unifying+Representation+Learning+and+Unconditional+Generation+through+Consistency+Model&voisId=VOIS00763941&voisName=%ED%95%9C%EA%B5%AD%EC%A0%95%EB%B3%B4%EA%B3%BC%ED%95%99%ED%9A%8C+2024+%ED%95%9C%EA%B5%AD%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EC%A2%85%ED%95%A9%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C+%EB%85%BC%EB%AC%B8%EC%A7%91&voisCnt=582&searchResultKey=%2FlMfWK6MWZi5N74t6Fqz8SfxFEuY%2BfflhAyf50E5NHfPQ6P1CWluU5Sax2zKCIok&language=ko_KR&hasTopBanner=true
+  thumbnail: "/assets/img/publications/urlug.png"

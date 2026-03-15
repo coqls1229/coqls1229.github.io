@@ -80,6 +80,18 @@ main {
       font-weight: 300;
       color: #222;
       line-height: 1.9em;
+      .about-body {
+        line-height: calc(1.9em + 1pt);
+      }
+      .vslab-link,
+      .vslab-link:visited {
+        color: $linkColor;
+        text-decoration: none;
+      }
+      .vslab-link:hover,
+      .vslab-link:focus {
+        text-decoration: none;
+      }
       h2 {
         font-family: "Raleway", sans-serif;
         font-weight: 700;
