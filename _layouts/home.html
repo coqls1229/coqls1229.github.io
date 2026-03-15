@@ -8,15 +8,88 @@ layout: default
 
 {{ content }}
 
-{%- if site.posts.size > 0 -%}
+{%- if site.data.news and site.data.news.size > 0 -%}
+  <div class="home-intro home-extras">
+    <h2>Recent News🎉</h2>
+    <ul>
+      {%- for item in site.data.news -%}
+        <li>[{{ item.date }}] {{ item.emoji }} {{ item.text }}</li>
+      {%- endfor -%}
+    </ul>
+    <div class="section-gap"></div>
+  </div>
+{%- endif -%}
+
+  <ul class="posts publications">
+    <li class="section-labelgroup">
+      <h1 class="section-label">Publications</h1>
+    </li>
+
+    {%- if site.data.publications and site.data.publications.size > 0 -%}
+      {%- for pub in site.data.publications -%}
+        {%- assign pub_primary_url = pub.paper_url -%}
+        {%- if pub_primary_url == nil or pub_primary_url == "" -%}
+          {%- assign pub_primary_url = pub.project_url -%}
+        {%- endif -%}
+        {%- if pub_primary_url == nil or pub_primary_url == "" -%}
+          {%- assign pub_primary_url = pub.code_url -%}
+        {%- endif -%}
+        <li class="post-wrapper">
+          <div class="post-card">
+            <div class="post-card-main">
+              {%- if pub_primary_url and pub_primary_url != "" -%}
+                <a class="post-link" href="{{ pub_primary_url }}" target="_blank" rel="noopener noreferrer">
+                  <h2 class="post-title">{{ pub.title | escape }}</h2>
+                </a>
+              {%- else -%}
+                <h2 class="post-title">{{ pub.title | escape }}</h2>
+              {%- endif -%}
+              <div class="post">
+                {%- if pub.authors -%}
+                  <p>{{ pub.authors }}</p>
+                {%- endif -%}
+                {%- if pub.venue -%}
+                  <p>{{ pub.venue }}</p>
+                {%- endif -%}
+                <div class="pub-links">
+                  {%- if pub.paper_url and pub.paper_url != "" -%}
+                    <a href="{{ pub.paper_url }}" target="_blank" rel="noopener noreferrer">[Paper]</a>
+                  {%- endif -%}
+                  {%- if pub.project_url and pub.project_url != "" -%}
+                    <a href="{{ pub.project_url }}" target="_blank" rel="noopener noreferrer">[Projects]</a>
+                  {%- endif -%}
+                  {%- if pub.code_url and pub.code_url != "" -%}
+                    <a href="{{ pub.code_url }}" target="_blank" rel="noopener noreferrer">[Github]</a>
+                  {%- endif -%}
+                </div>
+              </div>
+            </div>
+            {%- if pub.thumbnail and pub.thumbnail != "" and pub_primary_url and pub_primary_url != "" -%}
+              <a class="post-thumb" href="{{ pub_primary_url }}" target="_blank" rel="noopener noreferrer">
+                <img src="{{ pub.thumbnail | relative_url }}" alt="{{ pub.title | escape }} thumbnail">
+              </a>
+            {%- endif -%}
+          </div>
+        </li>
+      {%- endfor -%}
+    {%- else -%}
+      <li class="post-wrapper">
+        <div class="post">
+          <p>Add items in <code>_data/publications.yml</code></p>
+        </div>
+      </li>
+    {%- endif -%}
+  </ul>
+
+  {%- if site.posts.size > 0 -%}
   <ul class="posts">
     <li class="posts-labelgroup" id="posts-labelgroup">
-      <h1 id="posts-label">posts</h1>
+      <h1 id="posts-label">projects</h1>
       {% if site.plainwhite.search %}
       <div class="search-container">
         <div class="search-section">
           <i class="icon-search"></i>
-          <input type="text" name="search" id="searchbar" autocomplete="off" aria-label="search in posts">
+          <input type="text" name="search" id="searchbar" autocomplete="off" aria-label="search in projects">
         </div>
         <div class="search-results" id="search-results" data-placeholder="No Results" style="display: none;"></div>
       </div>

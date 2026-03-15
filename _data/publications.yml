@@ -1,0 +1,17 @@
+#
+# Example:
+# - title: "Your Paper Title"
+#   authors: "Your Name, Coauthor Name"
+#   venue: "Conference/Journal, 2026"
+#   paper_url: "https://arxiv.org/abs/..."
+#   project_url: "https://..."
+#   code_url: "https://github.com/..."
+#   thumbnail: "/assets/img/publications/your-paper.png"
+
+- title: "RefineVAD: Semantic-Guided Feature Recalibration for Weakly Supervised Video Anomaly Detection"
+  authors: "Junhee Lee*, ChaeBeen Bang*, MyoungChul Kim*, MyeongAh Cho"
+  venue: "The 40th Annual AAAI Conference on Artificial Intelligence (AAAI 2026), Jan. 2026"
+  paper_url: "https://arxiv.org/abs/2511.13204"
+  project_url: "https://visualsciencelab-khu.github.io/RefineVAD-project/"
+  code_url: "https://github.com/VisualScienceLab-KHU/RefineVAD"
+  thumbnail: "/assets/img/publications/refinevad.png"

@@ -45,7 +45,7 @@ h2 {
   }
 }
 main {
-  margin: 0 90px;
+  margin: 0 110px;
   display: flex;
   height: 100%;
 
@@ -54,18 +54,18 @@ main {
     max-width: 1440px;
   }
   @media screen and (max-width: 1280px) {
-    margin: 0 75px;
+    margin: 0 90px;
   }
   @media screen and (max-width: 1024px) {
-    margin: 0 35px;
+    margin: 0 50px;
   }
 
   @media screen and (max-width: $mobileW) {
-    margin: 0 10px;
+    margin: 0 18px;
     flex-direction: column;
   }
   @media screen and (max-width: $smallMobileW) {
-    margin: 0;
+    margin: 0 12px;
   }
 
   .content {
@@ -75,11 +75,19 @@ main {
       width: 100%;
     }
     .home-intro {
-      margin: 45px 30px;
+      margin: 45px 45px;
       font-family: "Merriweather", sans-serif;
       font-weight: 300;
       color: #222;
       line-height: 1.9em;
+      h2 {
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+      }
+      p,
+      li {
+        font-size: 14px;
+      }
       .section-gap {
         height: 16px;
       }
@@ -163,7 +171,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   a {
-    margin-bottom: .5em;
+    margin: 0 10px .5em;
   }
   li {
     display: flex;
@@ -176,7 +184,7 @@ main {
       color: $linkColor;
       font-weight: 700;
       font-family: "Raleway", sans-serif;
-      font-size: 12px;
+      font-size: 24px;
       letter-spacing: 0.02em;
       display: inline-flex;
       align-items: center;
@@ -300,13 +308,13 @@ main {
 
 .post-title {
   line-height: 1.2em;
-  font-size: 24px;
+  font-size: 21px;
   margin-bottom: 10px;
 }
 .posts,
 .post-container {
   list-style-type: none;
-  margin: 45px 30px;
+  margin: 45px 45px;
   padding: 0;
   @media screen and (max-width: $smallMobileW) {
     margin-left: 20px;
@@ -352,16 +360,41 @@ main {
   border-bottom: 1px solid #eee;
 }
 
-#posts-label {
-  font-size: 11px;
-  color: #555;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+#posts-label,
+.section-label {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #222;
   padding: 10px 0;
-  font-weight: normal;
   margin: 0;
   overflow: hidden;
   transition: width 0.1s;
+}
+
+#posts-label {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.section-labelgroup {
+  margin: 0 0 0.67em 0;
+  display: flex;
+  align-items: baseline;
+  border-bottom: 1px solid #eee;
+}
+
+.pub-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 6px;
+}
+.pub-links a {
+  color: $linkColor;
+  text-decoration: none;
+}
+.pub-links a:hover {
+  border-bottom: 0.5px solid $linkColor;
 }
 table {
   th, td {

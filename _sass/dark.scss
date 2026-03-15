@@ -22,10 +22,14 @@
 		color: $dark_text_color
 	}
 
-	#posts-label {
-		color: $dark_text_color;
-		border-bottom: 1px solid #272727;
-	}
+		#posts-label {
+			color: $dark_text_color;
+			border-bottom: 1px solid #272727;
+		}
+
+		.section-labelgroup {
+			border-bottom: 1px solid #333;
+		}
 
 	@import 'ext/solarized-dark';
 	.highlight, .highlight *

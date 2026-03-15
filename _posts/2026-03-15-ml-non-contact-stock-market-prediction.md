@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "국내 주식데이터를 활용한 주가 예측"
+title: "Stock price prediction using domestic stock data"
 date: 2026-03-15 09:00:00 +0900
 categories: [project, ml]
 ---
 
-## Project 
+This post summarizes the README content for **Stock price prediction using domestic stock data**,.
+
 
 ![스크린샷(1)](https://github.com/khuda-5th/ML_Non_contact_Stock_market_prediction/assets/83733215/f4e2abf4-f27e-4b30-95bc-345054f436fc)
 

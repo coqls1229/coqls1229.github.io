@@ -21,20 +21,20 @@ main {
     border-radius: 5px;
   }
 
-    i {
-      color: #777;
-      flex-grow: 0;
-      padding: 0 8px;
-      transition: color 0.5s;
-      font-size: 11px;
-    }
+	    i {
+	      color: #777;
+	      flex-grow: 0;
+	      padding: 0 8px;
+	      transition: color 0.5s;
+	      font-size: 14px;
+	    }
 
-    input {
-      color: #555;
-      background-color: transparent;
-      font-size: 11px;
-      flex-grow: 1;
-      height: 39px;
+	    input {
+	      color: #555;
+	      background-color: transparent;
+	      font-size: 14px;
+	      flex-grow: 1;
+	      height: 39px;
     border: none;
     padding: 10px 0;
     outline: none;

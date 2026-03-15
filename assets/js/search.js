@@ -20,7 +20,7 @@ window.onload = function () {
     if (/Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent))
         document.body.firstElementChild.tabIndex = 1;
 
-    var $labelGroup = document.querySelector(".posts-labelgroup");
+    var $labelGroup = document.getElementById("posts-labelgroup");
     var $postLabel = document.getElementById("posts-label");
     var labelWidth = $postLabel.scrollWidth;
 
@@ -45,4 +45,3 @@ window.onload = function () {
         document.body.onclick = null;
     };
 }
-
