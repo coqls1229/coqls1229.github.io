@@ -18,21 +18,34 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: Chaebeen Bang
+email: coqls1229@khu.ac.kr
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  AI undergraduate at Kyung Hee University focused on video understanding,
+  multimodal learning, video anomaly detection, and diffusion-based video generation.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: coqls1229
+github_username:  coqls1229
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+
+show_excerpts: true
+
+plainwhite:
+  name: Chaebeen Bang
+  tagline: Video understanding and multimodal learning
+  date_format: "%b %-d, %Y"
+  html_lang: "en"
+  portfolio_image: "assets/profile.jpg"
+  social_links:
+    github: coqls1229
+    linkedIn: in/chaebeen-bang-21947a333
+    email: coqls1229@khu.ac.kr
+    cv: /assets/CV.pdf
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -42,6 +55,7 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
+# include:
 # exclude:
 #   - .sass-cache/
 #   - .jekyll-cache/
