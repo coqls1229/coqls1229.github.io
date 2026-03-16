@@ -1,11 +1,12 @@
 ---
 layout: post
+order: 2
 title: "Make Anything with LEGO: Building LEGO 3D Blueprints from 2D Images"
-date: 2023-11-15 09:30:00 +0900
+date: 2023-11-15
 categories: [project, generative-ai]
 ---
 
-This post summarizes the README content for **Make Anything with LEGO**, with images from the project.
+This post summarizes **Make Anything with LEGO**: a pipeline that turns a single 2D image into a buildable LEGO blueprint by generating a 3D mesh (SR + One-2-3-45), voxelizing the result, and converting colored voxels into LEGO bricks (LDR) for step-by-step assembly.
 
 ## Motivation
 

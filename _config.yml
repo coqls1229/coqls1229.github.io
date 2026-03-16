@@ -40,7 +40,8 @@ plainwhite:
   tagline: |
     Video Understanding
     and 3D Vision
-  date_format: "%b %-d, %Y"
+  # Display only year/month across the site (e.g., 2026.03)
+  date_format: "%Y.%m"
   html_lang: "en"
   portfolio_image: "assets/profile.jpg"
   social_links:

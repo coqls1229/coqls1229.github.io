@@ -1,12 +1,12 @@
 ---
 layout: post
+order: 4
 title: "Stock price prediction using domestic stock data"
-date: 2024-01-15 09:00:00 +0900
+date: 2024-01-15
 categories: [project, ml]
 ---
 
-This post summarizes the README content for **Stock price prediction using domestic stock data**,.
-
+This post summarizes **Stock price prediction using domestic stock data**: collecting/cleaning Korean stock market data, running EDA, and training ML models (e.g., Random Forest, Histogram-based Gradient Boosting) with hyperparameter tuning to compare predictive performance.
 
 ![스크린샷(1)](https://github.com/khuda-5th/ML_Non_contact_Stock_market_prediction/assets/83733215/f4e2abf4-f27e-4b30-95bc-345054f436fc)
 

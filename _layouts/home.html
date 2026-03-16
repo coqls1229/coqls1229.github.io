@@ -96,7 +96,8 @@ layout: default
       {% endif %}
     </li>
 
-    {%- for post in site.posts -%}
+    {%- assign projects = site.posts | sort: "order" -%}
+    {%- for post in projects -%}
       <li>
         {%- assign date_format = site.plainwhite.date_format | default: "%b %-d, %Y" -%}
         <div class="post-card">
