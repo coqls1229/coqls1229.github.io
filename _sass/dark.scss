@@ -18,9 +18,12 @@
 		color: #ddd;
 	}
 
-	.social [class^="icon-"] {
-		color: $dark_text_color
-	}
+		.social [class^="icon-"] {
+			color: $dark_text_color
+		}
+		.social svg {
+			color: $dark_text_color
+		}
 
 		#posts-label {
 			color: $dark_text_color;

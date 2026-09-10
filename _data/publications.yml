@@ -8,6 +8,12 @@
 #   code_url: "https://github.com/..."
 #   thumbnail: "/assets/img/publications/your-paper.png"
 
+- title: "CLUE-VAD: Structured Semantic Clues for Understanding Explainable Events in Video Anomaly Detection"
+  authors: "MyoungChul Kim, Junhee Lee, ChaeBeen Bang, MyeongAh Cho"
+  venue: "European Conference on Computer Vision (ECCV 2026), Sep. 2026"
+  paper_url: "https://openreview.net/pdf?id=wONGmN1hXL"
+  thumbnail: ""
+
 - title: "RefineVAD: Semantic-Guided Feature Recalibration for Weakly Supervised Video Anomaly Detection"
   authors: "Junhee Lee*, ChaeBeen Bang*, MyoungChul Kim*, MyeongAh Cho"
   venue: "The 40th Annual AAAI Conference on Artificial Intelligence (AAAI 2026), Jan. 2026"

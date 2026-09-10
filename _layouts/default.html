@@ -34,21 +34,37 @@
       </div>
       {% capture footer %}
       {%- if site.plainwhite.social_links != '' -%}
-      <ul class="social about-footer {{condensed_class}}">
-        {%- if site.plainwhite.social_links.github -%}
-        <a href="https://github.com/{{ site.plainwhite.social_links.github }}" target="_blank">
-          <li>
-            <i class="icon-github-circled"></i>
-          </li>
-        </a>
-        {%- endif -%}
-        {%- if site.plainwhite.social_links.gitlab -%}
-        <a href="https://gitlab.com/{{ site.plainwhite.social_links.gitlab }}" target="_blank">
-          <li>
-            <i class="icon-gitlab"></i>
-          </li>
-        </a>
-        {%- endif -%}
+	      <ul class="social about-footer {{condensed_class}}">
+	        {%- if site.plainwhite.social_links.github -%}
+	        <a href="https://github.com/{{ site.plainwhite.social_links.github }}" target="_blank">
+	          <li>
+	            <i class="icon-github-circled"></i>
+	          </li>
+	        </a>
+	        {%- endif -%}
+	        {%- if site.plainwhite.social_links.tistory -%}
+	        {%- assign tistory_value = site.plainwhite.social_links.tistory -%}
+	        {%- if tistory_value contains '://' -%}
+	        {%- assign tistory_url = tistory_value -%}
+	        {%- else -%}
+	        {%- assign tistory_url = 'https://' | append: tistory_value -%}
+	        {%- endif -%}
+	        <a href="{{ tistory_url }}" target="_blank" rel="noopener noreferrer" aria-label="Tistory">
+	          <li>
+	            <svg class="icon-tistory" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
+	              <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" />
+	              <path d="M9 8h6M12 8v10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+	            </svg>
+	          </li>
+	        </a>
+	        {%- endif -%}
+	        {%- if site.plainwhite.social_links.gitlab -%}
+	        <a href="https://gitlab.com/{{ site.plainwhite.social_links.gitlab }}" target="_blank">
+	          <li>
+	            <i class="icon-gitlab"></i>
+	          </li>
+	        </a>
+	        {%- endif -%}
         {%- if site.plainwhite.social_links.linkedIn -%}
         <a href="https://www.linkedin.com/{{ site.plainwhite.social_links.linkedIn }}" target="_blank">
           <li>
