@@ -297,6 +297,11 @@ main {
   min-width: 0;
 }
 
+.project-card {
+  flex-direction: row-reverse;
+  gap: 22px;
+}
+
 .post-thumb {
   flex: 0 0 140px;
   width: 140px;
@@ -316,6 +321,9 @@ main {
 @media screen and (max-width: $mobileW) {
   .post-card {
     flex-direction: column;
+  }
+  .project-card {
+    flex-direction: column-reverse;
   }
   .post-thumb {
     width: 100%;
@@ -343,6 +351,15 @@ main {
     margin-top: 0;
   }
 }
+
+.posts.publications {
+  margin-bottom: 82px;
+
+  @media screen and (max-width: $mobileW) {
+    margin-bottom: 64px;
+  }
+}
+
 .post-container {
   padding-left: 30px;
 }
@@ -374,7 +391,7 @@ main {
 .posts-labelgroup {
   margin: 0 0 0.67em 0;
   display: flex;
-  align-items: baseline;
+  align-items: flex-end;
   border-bottom: 1px solid #eee;
 }
 
@@ -398,8 +415,19 @@ main {
 .section-labelgroup {
   margin: 0 0 0.67em 0;
   display: flex;
-  align-items: baseline;
+  align-items: flex-end;
   border-bottom: 1px solid #eee;
+}
+
+.section-heading-copy {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0 9px;
+
+  #posts-label,
+  .section-label {
+    padding: 2px 0 0;
+  }
 }
 
 .pub-links {
@@ -414,6 +442,15 @@ main {
 .pub-links a:hover {
   border-bottom: 0.5px solid $linkColor;
 }
+
+.career-kicker {
+  color: $linkColor;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
 table {
   th, td {
     padding: 8px 13px;

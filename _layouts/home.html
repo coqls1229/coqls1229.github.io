@@ -22,7 +22,10 @@ layout: default
 
   <ul class="posts publications">
     <li class="section-labelgroup">
-      <h1 class="section-label">Publications</h1>
+      <div class="section-heading-copy">
+        <span class="career-kicker">Research</span>
+        <h1 class="section-label">Publications</h1>
+      </div>
     </li>
 
     {%- if site.data.publications and site.data.publications.size > 0 -%}
@@ -84,7 +87,10 @@ layout: default
   {%- if site.posts.size > 0 -%}
   <ul class="posts">
     <li class="posts-labelgroup" id="posts-labelgroup">
-      <h1 id="posts-label">Projects</h1>
+      <div class="section-heading-copy">
+        <span class="career-kicker">Selected Work</span>
+        <h1 id="posts-label">Projects</h1>
+      </div>
       {% if site.plainwhite.search %}
       <div class="search-container">
         <div class="search-section">
@@ -100,7 +106,7 @@ layout: default
     {%- for post in projects -%}
       <li>
         {%- assign date_format = site.plainwhite.date_format | default: "%b %-d, %Y" -%}
-        <div class="post-card">
+        <div class="post-card project-card">
           <div class="post-card-main">
             <a class="post-link" href="{{ post.url | relative_url }}">
               <h2 class="post-title">{{ post.title | escape }}</h2>
