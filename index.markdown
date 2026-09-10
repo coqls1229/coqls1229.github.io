@@ -17,7 +17,7 @@ I am passionate about applying AI research to solve real-world problems and crea
 <div class="section-gap"></div>
 
 ## Education
-- **M.S. in Kim Jaechul Graduate School of AI,KAIST** (2026-Present)
-- **B.S. in Artificial Intelligence, Kyung Hee University** (2022 – 2026)
+- **M.S. in Kim Jaechul Graduate School of AI,KAIST (2026-Present)**
+- B.S. in Artificial Intelligence, Kyung Hee University (2022 – 2026)
 
 </div>
